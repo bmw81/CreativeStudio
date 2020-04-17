@@ -27,6 +27,16 @@ p {
     margin: 8px 0;
 }
 
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #090909;
+    text-transform: uppercase;
+    padding-left: 28px;
+    background: url(../images/arrow.png) no-repeat 0 10px; /*Устанавливаем стрелку в качестве фонов заголовков и позиционируем ее*/
+    margin-bottom: 11px;
+}
+
 #top-line {
     height: 16px;
     background: #090909;
@@ -106,14 +116,8 @@ p {
 }
 
 .content-box h2 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #090909;
-    text-transform: uppercase;
     border-bottom: 6px solid #090909;
     padding-bottom: 3px;
-    padding-left: 28px;
-    background: url(../images/arrow.png) no-repeat 0 10px; /*Устанавливаем стрелку в качестве фонов заголовков и позиционируем ее*/
     margin-bottom: 16px;
 }
 
@@ -128,4 +132,35 @@ p {
     font-style: italic;
     color: #090909;
     margin-top: 20px; /*Этот отступ не будет суммироваться с отступом предыдущего абзаца, а поголотит его как меньший*/
+}
+
+#portfolio {
+    margin: 20px  0 0 0;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #c0c0c0;
+    overflow: hidden;
+}
+
+.portfolio-image {
+    width: 215px;
+    height: 135px;
+    float: left;
+    margin-right: 33px;
+    position: relative;
+}
+
+#portfolio :last-child {
+    margin-right: 0;
+}
+
+.view {
+    display: block;
+    padding: 4px 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fe9b00;
+    color: #000;
+    font-weight: bold;
+    line-height: 1;
 }
