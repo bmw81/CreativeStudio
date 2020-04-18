@@ -27,14 +27,24 @@ p {
     margin: 8px 0;
 }
 
-h2 {
-    font-size: 18px;
+h2, h3 {
     font-weight: bold;
     color: #090909;
     text-transform: uppercase;
+}
+
+h2 {
+    font-size: 18px;
     padding-left: 28px;
     background: url(../images/arrow.png) no-repeat 0 10px; /*Устанавливаем стрелку в качестве фонов заголовков и позиционируем ее*/
     margin-bottom: 11px;
+}
+
+h3 {
+    font-size: 12px;
+    padding-left: 22px;
+    background: url(../images/arrow_small.png) no-repeat 0 6px; /*Устанавливаем стрелку в качестве фонов заголовков и позиционируем ее*/
+    margin-bottom: 20px;
 }
 
 #top-line {
@@ -111,10 +121,6 @@ h2 {
     margin-right: 52px;
 }
 
-#content-box {
-    margin-right: 0;
-}
-
 .content-box h2 {
     border-bottom: 6px solid #090909;
     padding-bottom: 3px;
@@ -149,7 +155,7 @@ h2 {
     position: relative;
 }
 
-#portfolio :last-child {
+#content-box, #portfolio :last-child {
     margin-right: 0;
 }
 
@@ -164,3 +170,76 @@ h2 {
     font-weight: bold;
     line-height: 1;
 }
+
+#bottom-row {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#blog {
+    width: 670px;
+    float: left;
+}
+
+#social {
+    width: 220px;
+    float: right;
+}
+
+#social ul li{
+    float: left;
+    margin-right: 12px;
+}
+
+#footer {
+    margin-top: 35px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background-color: #e2e2e2;
+}
+
+#footer-content {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#footer-content a {
+    font-size: 12px ;
+    color: #5d5d5d;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+ #footer-content a:hover {
+    text-decoration: underline;
+ }
+
+.clear {
+    clear: both;
+}
+
+#footer-content ul li {
+    float: left;
+    border-left: 1px solid #5d5d5d; 
+    padding: 0 5px 0 5px;
+    line-height: 1;
+}
+
+#footer-content ul li:first-child { 
+    padding: 0 5px 0 0;
+    border: none;
+}
+
+#footer-content p {
+    margin: 3px 0 0 0;
+}
+
+#logo-footer {
+    width: 119px;
+    height: 64px;
+    background-image: url(../images/logo-footer.png);
+    position: absolute;
+    right: 0;
+    top: -12px;
+}
+
